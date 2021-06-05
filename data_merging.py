@@ -2,7 +2,7 @@ import csv
 import pandas as pd
 
 file1 = 'bright_stars.csv'
-file2 = 'unit_converted_stars.csv'
+file2 = 'dwarf_stars.csv'
 
 d1 = []
 d2 = []
@@ -37,5 +37,5 @@ with open("total_stars.csv",'w',encoding='utf8') as f:
     csvwriter.writerow(h)   
     csvwriter.writerows(p_d)
     
-df = pd.read_csv('total_stars.csv')
+df = pd.read_csv('stars.csv')
 df.tail(8)
